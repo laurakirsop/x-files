@@ -1,0 +1,148 @@
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    .container .one.column,
+    .container .one.columns                     { width: 60px;  }
+    .container .two.columns                     { width: 140px; }
+    .container .three.columns                   { width: 220px; }
+    .container .four.columns                    { width: 300px; }
+    .container .five.columns                    { width: 380px; }
+    .container .six.columns                     { width: 460px; }
+    .container .seven.columns                   { width: 540px; }
+    .container .eight.columns                   { width: 620px; }
+    .container .nine.columns                    { width: 700px; }
+    .container .ten.columns                     { width: 780px; }
+    .container .eleven.columns                  { width: 860px; }
+    .container .twelve.columns                  { width: 940px; }
+
+    .container .offset-by-one                   { margin-left: 90px;  }
+    .container .offset-by-two                   { margin-left: 170px; }
+    .container .offset-by-three                 { margin-left: 250px; }
+    .container .offset-by-four                  { margin-left: 330px; }
+    .container .offset-by-five                  { margin-left: 410px; }
+    .container .offset-by-six                   { margin-left: 490px; }
+    .container .offset-by-seven                 { margin-left: 570px; }
+    .container .offset-by-eight                 { margin-left: 650px; }
+    .container .offset-by-nine                  { margin-left: 730px; }
+    .container .offset-by-ten                   { margin-left: 810px; }
+    .container .offset-by-eleven                { margin-left: 870px; }
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 44px; }
+        .container .two.columns                     { width: 108px; }
+        .container .three.columns                   { width: 172px; }
+        .container .four.columns                    { width: 236px; }
+        .container .five.columns                    { width: 300px; }
+        .container .six.columns                     { width: 364px; }
+        .container .seven.columns                   { width: 428px; }
+        .container .eight.columns                   { width: 492px; }
+        .container .nine.columns                    { width: 556px; }
+        .container .ten.columns                     { width: 620px; }
+        .container .eleven.columns                  { width: 684px; }
+        .container .twelve.columns                  { width: 748px; }
+
+        .container .offset-by-one                   { margin-left: 74px; }
+        .container .offset-by-two                   { margin-left: 138px;}
+        .container .offset-by-three                 { margin-left: 202px; }
+        .container .offset-by-four                  { margin-left: 266px; }
+        .container .offset-by-five                  { margin-left: 330px; }
+        .container .offset-by-six                   { margin-left: 394px; }
+        .container .offset-by-seven                 { margin-left: 458px; }
+        .container .offset-by-eight                 { margin-left: 522px; }
+        .container .offset-by-nine                  { margin-left: 586px; }
+        .container .offset-by-ten                   { margin-left: 650px; }
+        .container .offset-by-eleven                { margin-left: 714px; }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns  { width: 300px; }
+
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven { padding-left: 0; }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns { width: 420px; }
+    }
+
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
